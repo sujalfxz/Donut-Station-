@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DONUT STATION</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    :root {
+      --bg: #0f0f0f;
+      --card: #1a1a1a;
+      --text: #f2f2f2;
+      --muted: #b5b5b5;
+      --accent: #ff9f1c;
+    }
+
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px 20px;
+      animation: fadeDown 0.8s ease;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      letter-spacing: 3px;
+      color: var(--accent);
+    }
+
+    header p {
+      margin: 8px 0;
+      color: var(--muted);
+    }
+
+    .info {
+      text-align: center;
+      padding: 10px 20px 30px;
+    }
+
+    .info a {
+      display: inline-block;
+      margin: 6px;
+      padding: 10px 16px;
+      background: var(--card);
+      color: var(--text);
+      text-decoration: none;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+
+    .info a:hover {
+      background: var(--accent);
+      color: #000;
+    }
+
+    .section {
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 20px;
+      background: var(--card);
+      border-radius: 10px;
+      animation: fadeUp 0.6s ease;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: var(--accent);
+      border-bottom: 1px solid #333;
+      padding-bottom: 6px;
+    }
+
+    .item {
+      display: flex;
+      justify-content: space-between;
+      padding: 6px 0;
+      border-bottom: 1px dashed #333;
+    }
+
+    .item:last-child {
+      border-bottom: none;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 10px;
+      font-size: 0.9rem;
+      color: var(--muted);
+    }
+
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <h1>🍩 DONUT STATION</h1>
+  <p>Snacks • Tea • Lunch</p>
+  <p>🕔 Open: 5:00 AM – 10:00 PM</p>
+</header>
+
+<div class="info">
+  <a href="tel:+9779841705270">📞 Delivery: +977 9841705270</a>
+  <a href="https://maps.app.goo.gl/UNK49Pj1rcwCBgG4A" target="_blank">📍 Find us on Map</a>
+</div>
+
+<!-- TEA / COFFEE -->
+<div class="section">
+  <h2>TEA / COFFEE</h2>
+  <div class="item"><span>Black Tea</span><span>20</span></div>
+  <div class="item"><span>Milk Tea</span><span>25</span></div>
+  <div class="item"><span>Lemon Tea</span><span>25</span></div>
+  <div class="item"><span>Hot Lemon</span><span>25</span></div>
+  <div class="item"><span>Hot Lemon with Honey</span><span>60</span></div>
+  <div class="item"><span>Black Coffee</span><span>30</span></div>
+  <div class="item"><span>Milk Coffee</span><span>40</span></div>
+</div>
+
+<!-- BREAKFAST -->
+<div class="section">
+  <h2>BREAKFAST</h2>
+  <div class="item"><span>Normal Donut</span><span>15</span></div>
+  <div class="item"><span>Cream Donut</span><span>30</span></div>
+  <div class="item"><span>Chocolate Donut</span><span>50</span></div>
+  <div class="item"><span>Chana Aalu</span><span>30</span></div>
+  <div class="item"><span>Aalu Keraau Jhol</span><span>30</span></div>
+  <div class="item"><span>Samosa</span><span>25</span></div>
+  <div class="item"><span>Boiled Egg</span><span>30</span></div>
+  <div class="item"><span>Plain Omelet</span><span>35</span></div>
+  <div class="item"><span>Masala Omelet</span><span>40</span></div>
+  <div class="item"><span>Bread Omelet</span><span>60</span></div>
+  <div class="item"><span>Aalu Paratha</span><span>50</span></div>
+  <div class="item"><span>Anda Chiuraa</span><span>80</span></div>
+</div>
+
+<!-- KHANA SET -->
+<div class="section">
+  <h2>KHANA SET</h2>
+  <div class="item"><span>Veg Khana</span><span>120</span></div>
+  <div class="item"><span>Chicken Khana</span><span>200</span></div>
+  <div class="item"><span>Omelet Khana</span><span>150</span></div>
+  <div class="item"><span>Mutton Khana</span><span>350</span></div>
+</div>
+
+<!-- CHOWMIN -->
+<div class="section">
+  <h2>CHOWMIN (Half / Full)</h2>
+  <div class="item"><span>Veg Chowmin</span><span>50 / 100</span></div>
+  <div class="item"><span>Egg Chowmin</span><span>80 / 130</span></div>
+  <div class="item"><span>Chicken Chowmin</span><span>80 / 130</span></div>
+  <div class="item"><span>Mix Chowmin</span><span>110 / 160</span></div>
+</div>
+
+<!-- THUKPA -->
+<div class="section">
+  <h2>THUKPA</h2>
+  <div class="item"><span>Veg Thukpa</span><span>80</span></div>
+  <div class="item"><span>Chicken Thukpa</span><span>110</span></div>
+  <div class="item"><span>Egg Thukpa</span><span>100</span></div>
+  <div class="item"><span>Mix Thukpa</span><span>130</span></div>
+</div>
+
+<!-- FRY RICE -->
+<div class="section">
+  <h2>FRY RICE (Half / Full)</h2>
+  <div class="item"><span>Veg Fry Rice</span><span>80 / 120</span></div>
+  <div class="item"><span>Chicken Fry Rice</span><span>100 / 150</span></div>
+  <div class="item"><span>Egg Fry Rice</span><span>100 / 150</span></div>
+</div>
+
+<!-- MOMO -->
+<div class="section">
+  <h2>MO:MO</h2>
+  <div class="item"><span>Veg Mo:Mo</span><span>100</span></div>
+  <div class="item"><span>Chicken Mo:Mo</span><span>120</span></div>
+  <div class="item"><span>Chicken Jhol Mo:Mo</span><span>150</span></div>
+</div>
+
+<!-- WAI WAI -->
+<div class="section">
+  <h2>WAI WAI ITEMS</h2>
+  <div class="item"><span>Wai Wai Soup</span><span>50</span></div>
+  <div class="item"><span>Wai Wai Egg Soup</span><span>80</span></div>
+  <div class="item"><span>Wai Wai Fry (Veg)</span><span>60</span></div>
+  <div class="item"><span>Wai Wai Egg Fry</span><span>85</span></div>
+  <div class="item"><span>Wai Wai Sadeko</span><span>60</span></div>
+</div>
+
+<!-- COLD DRINKS -->
+<div class="section">
+  <h2>COLD DRINKS</h2>
+  <div class="item"><span>Coke / Fanta / Sprite</span><span>60</span></div>
+  <div class="item"><span>Mineral Water</span><span>20</span></div>
+  <div class="item"><span>Red Bull</span><span>120</span></div>
+  <div class="item"><span>Extreme</span><span>140</span></div>
+  <div class="item"><span>Nimbu Pani</span><span>50</span></div>
+  <div class="item"><span>Fruiti</span><span>30</span></div>
+</div>
+
+<!-- LASSI -->
+<div class="section">
+  <h2>LASSI</h2>
+  <div class="item"><span>Plain Lassi</span><span>90</span></div>
+  <div class="item"><span>Banana Lassi</span><span>110</span></div>
+</div>
+
+<!-- KEEMA NOODLES -->
+<div class="section">
+  <h2>KEEMA NOODLES (Half / Full)</h2>
+  <div class="item"><span>Chicken</span><span>120 / 180</span></div>
+  <div class="item"><span>Veg</span><span>80 / 120</span></div>
+  <div class="item"><span>Egg</span><span>100 / 150</span></div>
+</div>
+
+<!-- SNACKS -->
+<div class="section">
+  <h2>SNACKS</h2>
+  <div class="item"><span>French Fries</span><span>150</span></div>
+  <div class="item"><span>Chips Chilly</span><span>180</span></div>
+  <div class="item"><span>Chicken Chilly</span><span>250</span></div>
+  <div class="item"><span>Peanut Sadeko</span><span>150</span></div>
+  <div class="item"><span>Chicken Sadeko</span><span>250</span></div>
+</div>
+
+<!-- SANDWICH -->
+<div class="section">
+  <h2>SANDWICH / BURGERS</h2>
+  <div class="item"><span>Cheese Sandwich</span><span>180</span></div>
+  <div class="item"><span>Chicken Sandwich</span><span>140</span></div>
+  <div class="item"><span>Veg Sandwich</span><span>100</span></div>
+</div>
+
+<footer>
+  Made by <strong>Sujal FxZ</strong>
+</footer>
+
+</body>
+</html>
